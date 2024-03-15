@@ -1,6 +1,6 @@
 
 # UNIFOR
-**Nome**: Breno <br>
+**Nome**: Breno Baís <br>
 **Disciplina**: Raciocínio lógico algorítm
 
 ## Exercício exemplo 1
