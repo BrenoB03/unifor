@@ -1,7 +1,7 @@
 
 # UNIFOR
 **Nome**: Breno Baís <br>
-**Disciplina**: Raciocínio lógico algorítmico
+**Disciplina**: Raciocínio lógico algorítmo
 
 ## Lista de exercícios 01
 
