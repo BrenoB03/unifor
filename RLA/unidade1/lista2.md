@@ -69,7 +69,7 @@ Algoritmo Media
 4 LEIA numero1, numero2, numero3, numero4
 5 SE numero1, numero2, numero3, numero4 >= 0 ENTAO           //verificar se o numero é positivo
 6 media = (numero1 + numero2 + numero3 + numero4) / 2       //calcular a media dos números
-7 ESCREVA "A média é +media+"
+7 ESCREVA ("A média é " media)
 8 FIM_SE
 9 SENAO                                                    //caso numero for negativo (condição linha 5)
 10 ESCREVA "O número deve ser positivo"
