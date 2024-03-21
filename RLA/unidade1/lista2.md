@@ -81,7 +81,7 @@ FIM_ALGORITMO
 |      numero1        |      numero2        |     numero3         |     numero4         |     media         | 
 |      --      |      --      |      --      |      --      |      --      | 
 |        5      |      6        |       7       |        8      |      13        | A média é 13
-|        10      |      10        |     10         |     -5         |     10         | O número deve ser positivo
+|        10     |      10       |     10        |     -5        |                | O número deve ser positivo
 
 ### Exercício 02 (2.5 pontos)
 Leia uma temperatura dada em Celsius (C) e imprima o equivalente em Fahrenheit (F). (Fórmula de conversão: F = (9/5) * C + 32)
