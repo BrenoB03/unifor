@@ -74,11 +74,11 @@ Algoritmo ContaAprovacoes
 4 LEIA salario
 5 SE salario <= 500 ENTAO                             //verificar se o salário é menor ou igual a 500
 6 novo salario1 = salario + salario*20/100           //calcular o novo salário
-7 ESCREVA "o novo salário é +novo salario1+!"
+7 ESCREVA ("o novo salário é" novo salario1!)
 8 FIM_SE
 9 SENAO                                             //caso salário for maior que 500 (condição linha 5)
 10 novo salario2 = salario + salario*10/100
-11 ESCREVA "O novo salário é +novosalario2+!"
+11 ESCREVA ("O novo salário é " novosalario2!)
 12 FIM_SE
 FIM_ALGORITMO
 ```
