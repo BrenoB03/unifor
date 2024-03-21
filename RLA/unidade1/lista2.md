@@ -63,28 +63,25 @@ A([INICIO]) --> B([FIM])
 
 ```
 Algoritmo Media
-1 DECLARE nota1, nota2, nota3, nota4, media
-2 ESCREVA "Digite a nota 1: "
-3 ESCREVA "Digite a nota 2: "
-4 ESCREVA "Digite a nota 3: "
-5 ESCREVA "Digite a nota 4: "
-6 INICIO
-7 LEIA nota1
-8 LEIA nota2
-9 LEIA nota3
-10 LEIA nota4
-11 media = (nota1 + nota2 + nota3 + nota4) / 2
-12 ESCREVA "A média é +media+"
-13FIM_SE
+1 DECLARE numero1, numero2, numero3, numero4, media, 
+2 ESCREVA "Digite o numero 1: ", "Digite o numero 2: ", "Digite o numero 3: ", "Digite o numero 4: "
+3 INCIO
+4 LEIA numero1, numero2, numero3, numero4
+5 SE numero1, numero2, numero3, numero4 >= 0 ENTAO           //verificar se o numero é positivo
+6 media = (numero1 + numero2 + numero3 + numero4) / 2       //calcular a media dos números
+7 ESCREVA "A média é +media+"
+8 FIM_SE
+9 SENAO                                                    //caso numero for negativo (condição linha 5)
+10 ESCREVA "O número deve ser positivo"
 FIM_ALGORITMO
 ```
 
 #### Teste de mesa (0.5 ponto)
 
-|              |              |              |              |              | 
+|      numero1        |      numero2        |     numero3         |     numero4         |     media         | 
 |      --      |      --      |      --      |      --      |      --      | 
-|              |              |              |              |              |
-|              |              |              |              |              |
+|        5      |      6        |       7       |        8      |      13        | A média é 13
+|        10      |      10        |     10         |     -5         |     10         | O número deve ser positivo
 
 ### Exercício 02 (2.5 pontos)
 Leia uma temperatura dada em Celsius (C) e imprima o equivalente em Fahrenheit (F). (Fórmula de conversão: F = (9/5) * C + 32)
