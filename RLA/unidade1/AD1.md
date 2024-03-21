@@ -57,6 +57,16 @@ A([INICIO]) --> B([FIM])
 
 ```
 Algoritmo TrocaValores
+1 DECLARE a, b, troca
+2 ESCREVA "Digite o valor de a: ", "Digite o valor de b: "
+3 INICIO
+4 LEIA a, b
+5 troca = b
+6 b = a
+7 a = troca
+8 ESCREVA ("a vale" a)
+9 ESCREVA ("b vale" b)
+10 FIM_SE
 FIM_ALGORITMO
 ```
 
@@ -88,10 +98,10 @@ FIM_ALGORITMO
 
 #### Teste de mesa (0.25 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
+|              |              |              |              |              | 
 |      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+|              |              |              |              |              |
+|              |              |              |              |              |
 
 ### Questão 3 - Soma de um conjunto de números (1 ponto)
 
@@ -114,10 +124,10 @@ FIM_ALGORITMO
 
 #### Teste de mesa (0.25 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
+|              |              |              |              |              | 
 |      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+|              |              |              |              |              |
+|              |              |              |              |              |
 
 ### Questão 4 - Cálculo de uma série (1 ponto)
 
@@ -141,10 +151,10 @@ FIM_ALGORITMO
 
 #### Teste de mesa (0.25 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
+|              |              |              |              |              | 
 |      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+|              |              |              |              |              |
+|              |              |              |              |              |
 
 ### Questão 5 - Cálculo fatorial (2 pontos)
 
@@ -166,10 +176,10 @@ FIM_ALGORITMO
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
+|              |              |              |              |              | 
 |      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+|              |              |              |              |              |
+|              |              |              |              |              |
 
 ### Questão 6 - Geração da sequência de Fibonacci (2 pontos)
 
@@ -192,10 +202,10 @@ FIM_ALGORITMO
 ```
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
+|              |              |              |              |              | 
 |      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+|              |              |              |              |              |
+|              |              |              |              |              |
 
 ### Questão 7 - Inversão dos dígitos de um número inteiro (2 pontos)
 
@@ -217,7 +227,7 @@ FIM_ALGORITMO
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
+|              |              |              |              |              | 
 |      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+|              |              |              |              |              |
+|              |              |              |              |              |
