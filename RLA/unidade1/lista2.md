@@ -1,7 +1,7 @@
 
 # UNIFOR
 **Nome**: Breno Baís <br>
-**Disciplina**: Raciocínio lógico algorítm
+**Disciplina**: Raciocínio lógico algorítmo
 
 ## Exercício exemplo
 Represente, em fluxograma e pseudocódigo, um algoritmo para calcular o adicional de salário de funcionário por cargo de uma empresa fictícia. Sabe-se que os funcionários de cargo técnico receberão reajuste de 50%, cargo de gerência, um reajuste de 30% e demais, um reajuste de 10%. 
@@ -63,15 +63,28 @@ A([INICIO]) --> B([FIM])
 
 ```
 Algoritmo Media
+1 DECLARE nota1, nota2, nota3, nota4, media
+2 ESCREVA "Digite a nota 1: "
+3 ESCREVA "Digite a nota 2: "
+4 ESCREVA "Digite a nota 3: "
+5 ESCREVA "Digite a nota 4: "
+6 INICIO
+7 LEIA nota1
+8 LEIA nota2
+9 LEIA nota3
+10 LEIA nota4
+11 media = (nota1 + nota2 + nota3 + nota4) / 2
+12 ESCREVA "A média é +media+"
+13FIM_SE
 FIM_ALGORITMO
 ```
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
+|              |              |              |              |              | 
 |      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+|              |              |              |              |              |
+|              |              |              |              |              |
 
 ### Exercício 02 (2.5 pontos)
 Leia uma temperatura dada em Celsius (C) e imprima o equivalente em Fahrenheit (F). (Fórmula de conversão: F = (9/5) * C + 32)
