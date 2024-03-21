@@ -87,8 +87,8 @@ FIM_ALGORITMO
 
 |       salario       |       salario <= 500       |        novo salario1      |      novo salario2        |      Saída        | 
 |      --       |      --      |      --      |      --      |      --      | 
-|       500       |       V       |     600     |      --      |      --      | O novo salário é R$ 600
-|       600       |       F       |      --     |      660     |      --      | O novo salário é R$ 660
+|       500       |       V       |     600     |              |              | O novo salário é R$ 600
+|       600       |       F       |           |      660     |              | O novo salário é R$ 660
 
 ## Exercício 03 (3 pontos)
 Represente, em fluxograma e pseudocódigo, um algoritmo para calcular a média aritmética entre duas notas de um aluno e mostrar sua situação, que pode ser aprovado ou reprovado.
@@ -123,8 +123,8 @@ FIM_ALGORITMO
 
 |    nota1     |      nota2      |      media        |     aprovação         |    Saída          | 
 |      --      |      --      |      --      |      --      |      --      | 
-|       4      |     10       |       7       |      V        |      --      | O aluno está aprovado
-|       7      |      3       |       5       |      F        |      --      | O aluno está reprovado
+|       4      |     10       |       7       |      V        |              | O aluno está aprovado
+|       7      |      3       |       5       |      F        |              | O aluno está reprovado
 
 ## Exercício 04 (3 pontos)
 Represente, em fluxograma e pseudocódigo, um algoritmo que, a partir da idade do candidato(a), determinar se pode ou não tirar a CNH. 
