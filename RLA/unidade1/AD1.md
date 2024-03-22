@@ -275,6 +275,21 @@ H --> I
 
 ```
 Algoritmo ContaAprovacoes
+1 DECLARE n, fator, i
+2 ESCREVA "Digite um número:"
+3 INICIO
+4 LEIA n
+5 SE n >= 0                         //verificar se o número é maior ou igual a zero
+6 fator = 1
+7 PARA i DE 1 ATE n PASSO 1 FAÇA
+8 SE n = 1,2...
+9 fator = fator * i
+10 SE i > n
+11 ESCREVA "O fatorial de n é:" fator 
+12 SENAO                             //caso o número seja menor que zero(condição linha)
+13 ESCREVA "O valor deve ser maior ou igual a zero"
+14 FIM_SE
+
 FIM_ALGORITMO
 ```
 
