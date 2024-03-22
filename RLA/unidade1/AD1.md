@@ -50,7 +50,15 @@ Dadas duas variáveis, $a$ e $b$, implemente e teste um algoritmo para trocar os
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{Digite o valor da a: }}
+B --> C[\a\]
+C --> D{{Digite o valor da b: }}
+D --> E[\b\]
+E --> F[aux = a]
+F --> G[a = b]
+G --> H[b = aux]
+H --> I{{"a =", a}}
+I --> J{{"b =", b}}
 ```
 
 #### Pseudocódigo (0.5 ponto)
@@ -86,7 +94,20 @@ Será considerado aprovado o aluno que tirar $nota$ 50 ou maior (no intervalo de
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{Digite o número de alunos: }}
+B --> C[\n\]
+C --> D[\cont = 0\]
+D --> E[\i = 1\]
+E --> F{i <= n}
+F --FALSE--> W{{Número de alunos aprovados: cont}}
+W --> Z([FIM])
+F --TRUE--> G{{Digite a nota do aluno, i}}
+G --> H[\nota\]
+H --> I{"nota >= 50 <br>E <br>nota <=100"}
+I --TRUE--> J[\cont =+ 1\]
+I --FALSE--> K[\i =+ 1\]
+J --> K
+K --LOOP--> F
 ```
 
 #### Pseudocódigo (0.5 ponto)
@@ -129,7 +150,21 @@ Aceite apenas $n$ maior ou igual a zero.
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{"Digite a quantidade de números<br> (n >= 0):"}}
+B --> C[\n\]
+C --> D{n >= 0}
+D --FALSE-->N{{"O valor deve ser maior ou igual a zero!"}}
+N --> M([FIM])
+D --TRUE--> E[/soma = 0/]
+E --> F[i = 1]
+F --> G{i <= n}
+G --FALSE--> L{{"A soma dos numeros é , soma"}}
+L --> M
+G --TRUE--> H{{Digite um número: }}
+H --> I[\num\]
+I --> J[soma =+ num]
+J --> K[i =+ 1]
+K --LOOP--> G
 ```
 
 #### Pseudocódigo (0.5 ponto)
@@ -168,7 +203,17 @@ $$ S = \frac{1}{2} + \frac{3}{4} + \frac{5}{6} + \frac{7}{8} + \dots $$
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{Digite o número de termos da série S: }}
+B --> C[/n/]
+C --> D[S = 0]
+D --> E[[i=0 ATE n PASSO 1]]
+E --i > n--> J{{"Soma da série S é ", S}}
+J --> K([FIM])
+E --"i=0,1,2,..,n"--> F[numerador = 2 * i + 1]
+F --> G[denominador = 2 * i + 2]
+G --> H[termo = numerador / denominador]
+H --> I[S += termo]
+I --LOOP--> E
 ```
 
 #### Pseudocódigo (0.5 ponto)
@@ -205,7 +250,17 @@ Dado um número $n$, implemente e teste um algoritmo para calcular o fatorial de
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{"Digite um numero inteiro nao-negativo:"}}
+B --> C[/n/]
+C --> D{n >= 0}
+D --TRUE--> E[fator = 1]
+D --FALSE--> J{{O valor deve ser maior ou igual a zero!}}
+J --> I([FIM])
+E --> F[[i=1 ATÉ n PASSO 1]]
+F --"i > n"--> H{{O fatorial de, n, é:, fator}}
+F --"i=1,2,..n"--> G[fator = fator * i]
+G --LOOP--> F
+H --> I
 ```
 
 #### Pseudocódigo (1.0 ponto)
@@ -232,7 +287,16 @@ Cada termo, além dos dois primeiros, é derivado da soma dos seus dois antecess
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{"Número de termos da série Fibonacci:"}}
+B --> C[a = 0]
+C --> D[b = 1]
+D --> E[[i=1 ATÉ n PASSO 1]]
+E --"i > n"--> J([FIM])
+E --"i=1,2,...,n"--> F{{a}}
+F --> G[termo_atual = a + b]
+G --> H[a = b]
+H --> I[b = termo_atual]
+I --LOOP--> E
 ```
 
 #### Pseudocódigo (1.0 ponto)
@@ -256,7 +320,19 @@ Implemente e teste um algoritmo para inverter a ordem dos dígitos de um número
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{Digite um número inteiro: }}
+B --> C[\num\]
+C --> D{num >= 0}
+D --TRUE--> G[num_inv = 0]
+G --> H{num > 0}
+H --FALSE--> Z{{"Número invertido:", numero_inv}}
+Z --> W([FIM])
+H --TRUE--> I[digito = num % 10]
+I --> J[num_inv = num_inv * 10 + digito]
+J --> K[num = num // 10]
+K --LOOP--> H
+D --FALSE--> E{{O número deve ser positivo!}}
+E --> W
 ```
 
 #### Pseudocódigo (1.0 ponto)
