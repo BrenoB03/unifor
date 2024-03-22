@@ -61,7 +61,12 @@ Sabe-se que os funcionários que recebem atualmente salário de até R$ 500 ter�
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{"Digite o salário:"}}
+B --> C{salario <= 500}
+C --V--> D[novo salario = salario * 1.2]
+C --F--> E[novo salario = salario * 1.1]
+E --> Z([FIM])
+D --> Z([FIM])
 ```
 
 #### Pseudocódigo (1.0 ponto)
@@ -97,7 +102,7 @@ Represente, em fluxograma e pseudocódigo, um algoritmo para calcular a média a
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+
 ```
 
 #### Pseudocódigo (1 ponto)
