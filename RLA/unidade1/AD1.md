@@ -175,6 +175,18 @@ A([INICIO]) --> B([FIM])
 
 ```
 Algoritmo ContaAprovacoes
+1 DECLARE s, n, numerador, denominador, i, termo
+2 ESCREVA "Digite o número de termos da série: "
+3 INICIO
+4 LEIA n 
+5 s = 0
+6 PARA i ATE n PASSO 1
+7 i = 0, 1, 2, 3...
+8 numerador = 2*i+1
+9 denominador = 2*i+2
+10 termo = numerador/denominador
+11 ESCREVA ("s é diferente de" termo)
+12 FIM_PARA
 FIM_ALGORITMO
 ```
 
