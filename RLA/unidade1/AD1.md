@@ -57,11 +57,11 @@ A([INICIO]) --> B([FIM])
 
 ```
 Algoritmo TrocaValores
-1 DECLARE a, b, troca
+1 DECLARE a, b, aux
 2 ESCREVA "Digite o valor de a: ", "Digite o valor de b: "
 3 INICIO
 4 LEIA a, b
-5 troca = b
+5 aux = b
 6 b = a
 7 a = troca
 8 ESCREVA ("a vale" a)
@@ -93,6 +93,23 @@ A([INICIO]) --> B([FIM])
 
 ```
 Algoritmo ContaAprovacoes
+1 DECLARE n, cont, i, nota
+2 ESCREVA "Digite o número de alunos: "
+3 INICIO
+4 cont = 0
+5 i = 1
+6 ENQUANTO i <= n                         //verificar
+7 ESCREVA "Digite a nota do aluno: "
+8 LEIA nota
+9 SE nota <= 100 E nota >= 50            //verificar se nota é maior ou igual a 50 e menor ou igual a 100
+10 cont = +1
+11 i = +1
+12 FIM_SE
+13 SENAO                                //caso n seja maior ou igual a i
+14 ESCREVA ("Número de alunos reprovados é" cont)
+15 FIM_SE
+16 SENAO                               //caso nota seja menor que 50 ou maior que 100
+17 i = +1
 FIM_ALGORITMO
 ```
 
