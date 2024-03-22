@@ -136,6 +136,18 @@ A([INICIO]) --> B([FIM])
 
 ```
 Algoritmo ContaAprovacoes
+1 DECLARE n, i, soma
+2 ESCREVA "Digite a quantidade de números: "
+3 INICIO
+4 LEIA n
+5 soma = 0
+6 PARA i DE 1 ATE n PASSO 1 FAÇA
+7 soma = soma + 1
+8 FIM_PARA
+9 ESCREVA ("A soma é igual a" soma)
+10 SENAO                                               //caso n seja menor que zero
+11 ESCREVA "O valor deve ser maior ou igual a 0"
+12 FIM
 FIM_ALGORITMO
 ```
 
@@ -239,6 +251,16 @@ A([INICIO]) --> B([FIM])
 
 ```
 Algoritmo ContaAprovacoes
+1 DECLARE num, num_inv, digito
+2 ESCREVA "Digite um número: "
+3 INICIO
+4 LEIA num
+5 SE num >= 0                      //verificar se o número é maior que 0
+6 num_inv = 0
+7 SE num > 0                      //verificar se o número é maior que 0
+8 digito = num % 10
+9 numero = numero // 10
+10 FIM_SE
 FIM_ALGORITMO
 ```
 
