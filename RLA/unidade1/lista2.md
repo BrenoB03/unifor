@@ -90,13 +90,24 @@ Leia uma temperatura dada em Celsius (C) e imprima o equivalente em Fahrenheit (
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{"Digite a temperatura em Celsius:"}}
+B --> C[c]
+C --> D[f = c * 9/5 + 32]
+D --> E{A temperatura em Fahrenheit é: f}
+E --> F([FIM])
 ```
 
 #### Pseudocódigo (1.0 ponto)
 
 ```
 Algoritmo ConverteCelsiusFarenheit
+1 DECLARE c, f
+2 ESCREVA "Digite a temperatura em Celsius:"
+3 INICIO
+4 LEIA 
+5 f = (c*9/5) + 32
+6 ESCREVA "A temperatura em Fahrenheit é:" f
+7 FIM
 FIM_ALGORITMO
 ```
 
