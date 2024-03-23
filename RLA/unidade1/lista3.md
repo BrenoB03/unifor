@@ -109,6 +109,19 @@ A([INICIO]) --> B([FIM])
 
 ```
 Algoritmo ClassificaCategoria
+DECLARE n, resto: INTEIRO
+ESCREVA "Digite o número:"
+INICIO
+LEIA n
+ENQUANTO n >= 0
+resto = numero % 2
+SENAO
+ESCREVA "Número é negativo"
+ENQUANTO resto == 0
+ESCREVA "Número é par"
+SENAO
+ESCREVA "Número é impar"
+FIM
 FIM_ALGORITMO
 ```
 
