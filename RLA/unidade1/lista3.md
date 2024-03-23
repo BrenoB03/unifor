@@ -169,6 +169,19 @@ K --LOOP--> F
 
 ```
 Algoritmo ClassificaCategoria
+DECLARE n, i, soma
+ESCREVA "Digite a quantidade de números:"
+INICIO
+LEIA n
+i = 1
+soma = 0
+SE n <= 0
+ESCREVA "Digite o número:", i
+soma = soma + 1
+i = i + 1
+SENAO                              //caso i for menor que n
+ESCREVA "A soma dos números é:", soma
+FIM
 FIM_ALGORITMO
 ```
 
